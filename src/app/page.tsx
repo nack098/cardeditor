@@ -5,7 +5,6 @@ import Tiptap from "@/components/Tiptap";
 import ColorCost from "@/components/ColorCost";
 import Image from "next/image";
 import { useToPng } from "@hugocxl/react-to-image";
-import { toPng } from "html-to-image";
 
 type ColorCost = {
   orange: number;

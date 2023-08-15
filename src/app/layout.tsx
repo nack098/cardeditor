@@ -1,9 +1,11 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Itim } from "next/font/google";
+import { Inter, Itim, Kanit } from "next/font/google";
 import localFont from "next/font/local";
 
 const itim = Itim({ weight: "400", subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
+const kanit = Kanit({ weight: "400", subsets: ["latin"] });
 const comicSans = localFont({
   src: "../../public/ComicSansMS3.ttf",
 });
@@ -19,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={comicSans.className}>{children}</body>
+      <body className={kanit.className}>{children}</body>
     </html>
   );
 }
