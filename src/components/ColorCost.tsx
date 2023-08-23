@@ -49,7 +49,7 @@ const ColorCost: React.FC<Props> = ({ colors }) => {
       {Array.from(Array(colors.ivory), (e, i) => {
         return (
           <span
-            key={`lime - ${i}`}
+            key={`ivory - ${i}`}
             className="p-5 ml-1 bg-smart_ivory rounded-full"
           />
         );

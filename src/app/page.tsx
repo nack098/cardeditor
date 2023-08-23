@@ -212,7 +212,7 @@ export default function Home() {
                 </div>
                 <div className="flex flex-row justify-between pt-3 drop-shadow-md">
                   <div className="flex">
-                    <div className="px-3 py-3 bg-smart_cyan inline" />
+                    <div className="px-3 py-3 bg-smart_orange inline" />
                     <input
                       type="number"
                       min="0"
