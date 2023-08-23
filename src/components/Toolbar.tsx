@@ -34,27 +34,33 @@ const Toolbar: React.FC<Props> = ({ editor }) => {
         </button>
         <button
           className="mr-1"
-          onClick={() => editor.chain().focus().setColor("#ADC200").run()}
+          onClick={() => editor.chain().focus().setColor("#abb90d").run()}
         >
-          <div className="p-[6px] rounded-full bg-[#ADC200]" />
+          <div className="p-[6px] rounded-full bg-smart_lime" />
         </button>
         <button
           className="mr-1"
-          onClick={() => editor.chain().focus().setColor("#7F00AB").run()}
+          onClick={() => editor.chain().focus().setColor("#c912b7").run()}
         >
-          <div className="p-[6px] rounded-full bg-[#7F00AB]" />
+          <div className="p-[6px] rounded-full bg-smart_magenta" />
         </button>
         <button
           className="mr-1"
           onClick={() => editor.chain().focus().setColor("#09B8B8").run()}
         >
-          <div className="p-[6px] rounded-full bg-[#09B8B8]" />
+          <div className="p-[6px] rounded-full bg-smart_cyan" />
         </button>
         <button
           className="mr-1"
           onClick={() => editor.chain().focus().setColor("#FF4821").run()}
         >
-          <div className="p-[6px] rounded-full bg-[#FF4821]" />
+          <div className="p-[6px] rounded-full bg-smart_orange" />
+        </button>
+        <button
+          className="mr-1"
+          onClick={() => editor.chain().focus().setColor("#eacc91").run()}
+        >
+          <div className="p-[6px] rounded-full bg-smart_ivory" />
         </button>
       </div>
     </div>

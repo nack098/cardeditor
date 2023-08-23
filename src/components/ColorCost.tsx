@@ -6,6 +6,7 @@ type Props = {
     cyan: number;
     magenta: number;
     lime: number;
+    ivory: number;
     any: number;
   };
 };
@@ -42,6 +43,14 @@ const ColorCost: React.FC<Props> = ({ colors }) => {
           <span
             key={`lime - ${i}`}
             className="p-5 ml-1 bg-smart_lime rounded-full"
+          />
+        );
+      })}
+      {Array.from(Array(colors.ivory), (e, i) => {
+        return (
+          <span
+            key={`lime - ${i}`}
+            className="p-5 ml-1 bg-smart_ivory rounded-full"
           />
         );
       })}

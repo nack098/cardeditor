@@ -14,10 +14,11 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors: {
-        smart_lime: "#ADC200",
-        smart_magenta: "#7F00AB",
+        smart_lime: "#abb90d",
+        smart_magenta: "#c912b7",
         smart_cyan: "#09B8B8",
         smart_orange: "#FF4821",
+        smart_ivory: "#eacc91",
       },
     },
   },

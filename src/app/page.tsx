@@ -28,10 +28,11 @@ type ColorCost = {
   cyan: number;
   magenta: number;
   lime: number;
+  ivory: number;
   any: number;
 };
 
-type Color = "orange" | "cyan" | "magenta" | "lime" | "any";
+type Color = "orange" | "cyan" | "magenta" | "lime" | "ivory" | "any";
 
 export default function Home() {
   const [font, setFont] = useState<NextFont>(fontList["kanit"]);
@@ -45,6 +46,7 @@ export default function Home() {
     cyan: 0,
     magenta: 0,
     lime: 0,
+    ivory: 0,
     any: 0,
   });
 
@@ -170,7 +172,7 @@ export default function Home() {
                     />
                   </div>
                   <div className="flex">
-                    <div className="px-3 py-3 bg-[#ADC200] inline" />
+                    <div className="px-3 py-3 bg-smart_lime inline" />
                     <input
                       type="number"
                       min="0"
@@ -184,7 +186,7 @@ export default function Home() {
                 </div>
                 <div className="flex flex-row justify-between pt-3 drop-shadow-md">
                   <div className="flex">
-                    <div className="px-3 py-3 bg-[#7F00AB] inline" />
+                    <div className="px-3 py-3 bg-smart_magenta inline" />
                     <input
                       type="number"
                       min="0"
@@ -196,7 +198,7 @@ export default function Home() {
                     />
                   </div>
                   <div className="flex">
-                    <div className="px-3 py-3 bg-[#09B8B8] inline" />
+                    <div className="px-3 py-3 bg-smart_cyan inline" />
                     <input
                       type="number"
                       min="0"
@@ -210,7 +212,7 @@ export default function Home() {
                 </div>
                 <div className="flex flex-row justify-between pt-3 drop-shadow-md">
                   <div className="flex">
-                    <div className="px-3 py-3 bg-[#FF4821] inline" />
+                    <div className="px-3 py-3 bg-smart_cyan inline" />
                     <input
                       type="number"
                       min="0"
@@ -218,6 +220,18 @@ export default function Home() {
                       value={colorCost.orange}
                       onChange={(e) => {
                         updateCost("orange", parseInt(e.currentTarget.value));
+                      }}
+                    />
+                  </div>
+                  <div className="flex">
+                    <div className="px-3 py-3 bg-smart_ivory inline" />
+                    <input
+                      type="number"
+                      min="0"
+                      className="w-9 ml-3"
+                      value={colorCost.ivory}
+                      onChange={(e) => {
+                        updateCost("ivory", parseInt(e.currentTarget.value));
                       }}
                     />
                   </div>
