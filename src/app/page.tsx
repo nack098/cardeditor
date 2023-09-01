@@ -252,7 +252,7 @@ export default function Home() {
             className="bg-zinc-100 max-h-[782px] max-w-[500px] h-[782px] w-[500px] flex flex-col items-center overflow-hidden"
             ref={ref}
           >
-            <div className="h-[60px] flex p-3 text-right w-full justify-end">
+            <div className="h-[60px] flex p-3 text-right w-full justify-end z-50">
               <ColorCost colors={colorCost} />
             </div>
             {image ? (
@@ -261,12 +261,12 @@ export default function Home() {
                 height={1}
                 width={1}
                 alt="rekt"
-                className="w-full h-[370px] overflow-hidden object-cover"
+                className="w-full h-[370px] overflow-hidden object-cover translate-y-[-60px]"
               />
             ) : (
               <div className="h-[370px] w-full" />
             )}
-            <div className="h-[272px] overflow-hidden text-black">
+            <div className="h-[332px] overflow-hidden text-black translate-y-[-60px]">
               <h1 className="text-center text-4xl pt-3">
                 {name ? name : "card name"}
               </h1>
